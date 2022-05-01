@@ -11,13 +11,13 @@ The scores analyzed are  the balance accuracy score, precision and sensitivity s
 - Precision score measures how likely a target can occur or how reliable a positive classification is.  
 - Sensitivity Score (Recall) measures how well a model can predict a positive classification.
 
-### **Naive Random Oversampling Results
+### **Naive Random Oversampling Results**
 
 This technique increases the minority class in an attempt to balance the dataset by randomly selecting instances in the minority class and adding it to the training set. From the image below, the balanced accuracy score for the dataset was 0.6403. Its precision score for high risk was 0.01 and 1.0 for low risk. This shows the model is more reliable in predicting low risk instances than high risk. The recall score is 0.66 for high risk and 0.62 for low risk.
 
 ![Random Oversampling](/Images/oversampling.png)
 
-### **SMOTE Oversampling Rssults**
+### **SMOTE Oversampling Results**
 This oversampling technique is used to deal with unbalanced datasets by increasing the size of the minority class in the dataset by interpolating the data points. From the model analysis, the balance accuracy score is 0.6515 which is a better score than the random oversampling. Precision scores for high and low risk were 0.01 and 1.00 respectively, same as oversampling approach. In contrast, the recall score for the SMOTE approach yielded a lower score (0.61) in predicting a positive classification of high risk application than random sampling.
 
 ![SMOTE Oversampling](/Images/SMOTE_oversampling.png)
